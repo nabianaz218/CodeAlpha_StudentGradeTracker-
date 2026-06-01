@@ -1,31 +1,24 @@
-# CodeAlpha - Student Grade Tracker
+# CodeAlpha - Premium Student Analytics Dashboard
 
-A robust Java console application developed as part of the CodeAlpha Internship program[cite: 1]. This tool allows educators to efficiently input, track, and analyze student marks with real-time statistical summaries[cite: 1].
+A robust, enterprise-grade Java Graphical User Interface (GUI) application developed as part of the CodeAlpha Internship program. This software serves as an interactive academic performance dashboard allowing educators to input, manage, and track student marks with real-time statistics and persistent file database records.
 
 ## 🚀 Features
-* **Dynamic Grade Input:** Continuously accept student grades until the user decides to stop (by entering `-1`)[cite: 1].
-* **Input Validation:** Restricts grade entries strictly between `0` and `100` to prevent erroneous data handling[cite: 1].
-* **Performance Analysis:** Instantly calculates and outputs[cite: 1]:
-  * Total number of students registered[cite: 1]
-  * Class average score[cite: 1]
-  * Highest achieving score[cite: 1]
-  * Lowest achieving score[cite: 1]
+* **Premium Dashboard UI:** Modern dark-mode aesthetic with custom slate cards, clean typography, responsive grids, and vibrant mint accents.
+* **Persistent Local Database:** Automatically saves records into a local text file (`student_records.txt`) and dynamically reloads existing database history upon application startup.
+* **Smart Data Table:** Displays information inside a beautifully padded, read-only data grid tracking unique generated Database IDs.
+* **Input Validation & Secure Logging:** Strictly controls grade boundaries between `0` and `100` and displays warning dialogs for format or blank entry errors.
+* **Automated Status Evaluation:** Instantly reviews individual grades to evaluate and display a student's status (e.g., *Distinction*, *Passed*, or *Remedial Needed*).
+* **Live Analytics Summary:** Dynamic metric cards pinned to the footer tracking total registered students, highest score, lowest score, and class average updates.
 
 ## 🛠️ Technologies Used
 * **Language:** Java (JDK 8 or higher)
-* **Core Concepts:** Object-Oriented Logic, Control Flow Loops, Array Structures (`ArrayList`), and Console I/O Scanner Management[cite: 1].
+* **GUI Engine:** Java Swing Framework, Layout Managers (`BorderLayout`, `BoxLayout`, `GridLayout`), and Advanced Table Models (`JTable`).
+* **Core Concepts:** Persistent File I/O Streams (`BufferedReader`, `PrintWriter`), Core Collections Architecture (`ArrayList`), Custom UI Painters (`UIManager`), and Look & Feel Cross-Platform Standardization.
 
-## 📋 Sample Output
-```text
-=== CodeAlpha Student Grade Tracker ===
-Enter student grades. Type -1 when you are finished:
-Enter grade: 89
-Enter grade: 78
-Enter grade: 67
-Enter grade: -1
+## 🖥️ User Interface Overview
+The application automatically launches in **Maximized Full-Screen Mode** (`JFrame.MAXIMIZED_BOTH`) to scale and adapt beautifully to any desktop monitor workspace. 
 
---- Performance Summary Report ---
-Total Students Registered: 3
-Average Score: 78.00
-Highest Score: 89.0
-Lowest Score: 67.0
+### Core Sections:
+1. **Registration Portal (Left panel):** Padded form capturing full student names and numeric grades securely.
+2. **Saved Student Database (Center table):** Grid alignment displaying generated database IDs, tracked student profiles, numeric grades, and evaluated academic outcomes.
+3. **Summary Analytics Report (Bottom layout):** High-visibility dashboard counters pulling live calculations for quick administrative reference.
